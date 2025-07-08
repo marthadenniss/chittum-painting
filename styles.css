@@ -11,13 +11,13 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 600px;
-  height: 600px;
-  background-image: url('images/watermark-logo.png');
+  width: 1000px;
+  height: 1000px;
+  background-image: url('img/TShirt\ Art\ Front\ Back\ \(1\)_Page_2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.05;
+  opacity: 0.15;
   transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
