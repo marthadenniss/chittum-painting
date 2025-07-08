@@ -50,7 +50,11 @@ body {
   object-fit: cover;
   width: 100%;
 }
-
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 /* Social icons in footer */
 .social-icons i {
   font-size: 1.5rem;
