@@ -55,6 +55,10 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
 }
+.carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
 /* Social icons in footer */
 .social-icons i {
   font-size: 1.5rem;
