@@ -45,6 +45,11 @@ body {
 .bbb-logo:hover {
   transform: scale(1.05);
 }
+.carousel-item img {
+  height: 500px; /* Adjust as needed */
+  object-fit: cover;
+  width: 100%;
+}
 
 /* Social icons in footer */
 .social-icons i {
