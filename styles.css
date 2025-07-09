@@ -47,13 +47,20 @@ body {
   width: 100%;
 }
 
+/* FIXED carousel caption styling */
 .carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
   background-color: rgba(0, 0, 0, 0.5) !important;
   padding: 1rem;
   border-radius: 0.5rem;
-  display: block !important;
-  z-index: 10;
   color: white;
+  text-align: center;
+  z-index: 1050 !important;
+  display: block !important;
 }
 
 .carousel-caption h5,
@@ -103,19 +110,8 @@ body {
   .carousel-caption {
     font-size: 0.9rem;
     padding: 0.75rem;
-  }
-
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.4) !important; /* a bit lighter */
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    display: block !important;
-    z-index: 10;
-    color: white;
-    max-width: 80%; /* keeps caption narrower */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* optional */
+    max-width: 90%;
+    bottom: 15px; /* slightly closer on small screens */
   }
 }
 
