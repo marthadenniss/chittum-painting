@@ -1,19 +1,16 @@
-/* Global font and body styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   background-color: #fff;
 }
 
-/* Fixed Watermark */
 .background-watermark {
-  content: "";
   position: fixed;
   top: 50%;
   left: 50%;
   width: 1000px;
   height: 1000px;
-  background-image: url('img/TShirt\ Art\ Front\ Back\ \(1\)_Page_2.png');
+  background-image: url('img/watermark.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -23,78 +20,112 @@ body {
   pointer-events: none;
 }
 
-/* Patriotic Navbar */
 .patriotic-navbar {
   background: linear-gradient(to right, #003366, #990000);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 999;
 }
 
-/* Hero Section */
 .hero {
   background: linear-gradient(to right, #002244, #8b0000);
   color: white;
 }
 
-/* Gallery BBB Logo */
 .bbb-logo {
   max-width: 200px;
   opacity: 0.85;
   transition: transform 0.3s ease;
 }
+
 .bbb-logo:hover {
   transform: scale(1.05);
 }
+
 .carousel-item img {
-  height: 500px; /* Adjust as needed */
+  height: 500px;
   object-fit: cover;
   width: 100%;
 }
+
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5) !important;
   padding: 1rem;
   border-radius: 0.5rem;
+  display: block !important;
+  z-index: 10;
+  color: white;
 }
+
 .carousel-caption h5,
 .carousel-caption p {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-/* Social icons in footer */
+
 .social-icons i {
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
+
 .social-icons a:hover {
   color: #ffc107;
 }
 
-/* Contact form */
 .contact-form-wrapper {
   max-width: 600px;
   background-color: #ffffff;
   border: 1px solid #dee2e6;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
-/* Testimonials */
+
 #testimonials {
   background-color: #f8f9fa;
 }
+
 .testimonial-card {
   transition: transform 0.3s ease;
 }
+
 .testimonial-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
-
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .background-watermark {
     width: 300px;
     height: 300px;
   }
+
   .bbb-logo {
     max-width: 150px;
   }
+
+  .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.25rem;
+  }
+}
+
+footer.footer {
+  background-color: #003366;
+  padding: 2rem 1rem;
+}
+
+footer.footer p,
+footer.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer.footer a:hover {
+  color: #ffc107;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
