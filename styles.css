@@ -10,7 +10,7 @@ body {
   left: 50%;
   width: 1000px;
   height: 1000px;
-  background-image: url('img/watermark.png');
+  background-image: url('img/TShirt\ Art\ Front\ Back\ \(1\)_Page_2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -47,20 +47,13 @@ body {
   width: 100%;
 }
 
-/* FIXED carousel caption styling */
 .carousel-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 80%;
   background-color: rgba(0, 0, 0, 0.5) !important;
   padding: 1rem;
   border-radius: 0.5rem;
-  color: white;
-  text-align: center;
-  z-index: 1050 !important;
   display: block !important;
+  z-index: 10;
+  color: white;
 }
 
 .carousel-caption h5,
@@ -109,9 +102,21 @@ body {
 
   .carousel-caption {
     font-size: 0.9rem;
-    padding: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 0.5rem;
+    color: white;
     max-width: 90%;
-    bottom: 15px; /* slightly closer on small screens */
+    margin: auto;
+    display: block !important;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.25rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
   }
 }
 
