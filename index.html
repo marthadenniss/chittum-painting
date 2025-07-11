@@ -123,7 +123,9 @@
   <section id="contact" class="section py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Contact Us</h2>
-      <p class="text-center fs-5 mb-4">Ready to start your next project? Send us a message below or email us directly.</p>
+      <p class="text-center fs-5 mb-4">
+        Ready to start your next project? Send us a message below or email us directly.
+      </p>
       <div class="contact-form-wrapper mx-auto shadow p-4 rounded bg-white">
         <form action="https://formspree.io/f/xqabrlbe" method="POST" class="contact-form">
           <div class="mb-3">
@@ -132,18 +134,28 @@
           </div>
           <div class="mb-3">
             <label for="email" class="form-label fs-5">Email</label>
-            <input type="email" id="email" name="_replyto" class="form-control" required />
+            <input type="email" id="email" name="email" class="form-control" required />
           </div>
           <div class="mb-3">
             <label for="message" class="form-label fs-5">Message</label>
             <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
           </div>
+  
+          <!-- Optional: custom subject line -->
+          <input type="hidden" name="_subject" value="New message from 2014 Chittum Painting LLC" />
+  
+          <!-- Optional: redirect after successful submission -->
+          <input type="hidden" name="_redirect" value="https://chittumpaintingllc.com/thank-you.html" />
+  
           <button type="submit" class="btn btn-danger w-100 fs-5">Send Message</button>
         </form>
       </div>
-      <p class="text-center mt-4 fs-5">Or email us at <a href="mailto:info@chittumpaintllc.com">info@chittumpaintingllc.com</a></p>
+      <p class="text-center mt-4 fs-5">
+        Or email us at <a href="mailto:info@chittumpaintingllc.com">info@chittumpaintingllc.com</a>
+      </p>
     </div>
   </section>
+  
 
   <section id="testimonials" class="section py-5">
     <div class="container">
